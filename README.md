@@ -1,5 +1,5 @@
 # nerm
-[N]ode
-[E]xpress
-[R]eact
-[M]ongo
+[N]ode\n
+[E]xpress\n
+[R]eact\n
+[M]ongo\n

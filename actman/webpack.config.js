@@ -128,7 +128,7 @@ module.exports = {
   // the environment in which the bundle should run
   // changes chunk loading behavior and available modules
 
-  //externals: ["react"],
+  //externals: ["react"], //error
   // Don't follow/bundle these modules, but request them at runtime from the environment
 
   stats: "errors-only",

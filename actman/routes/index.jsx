@@ -1,11 +1,11 @@
 var router = require('express').Router();
 var React = require('react');
 var ReactDOMServer = require('react-dom/server');
-var Component = require('../Component.jsx');
 var ReactRouter = require('react-router');
 
 router.get('*', function(req, res) {
   var props = {title : 'Universal React'};
+
   ReactRouter.match({
     routes: require('./routes.jsx'),
     location: req.url
@@ -24,7 +24,7 @@ router.get('*', function(req, res) {
     } else {
       res.status(404).send('Not Found!');
     }
-  }); //function
+  }); //match
 }); //get
 
 module.exports = router;

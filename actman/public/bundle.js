@@ -11959,7 +11959,7 @@ module.exports = React.createElement(
   React.createElement(
     Route,
     { path: '/', component: __webpack_require__(113) },
-    React.createElement(IndexRoute, { component: __webpack_require__(112) }),
+    React.createElement(Route, { path: '/', component: __webpack_require__(112) }),
     React.createElement(Route, { path: 'about', component: __webpack_require__(111) })
   )
 );
@@ -12004,7 +12004,7 @@ var React = __webpack_require__(6);
 
 module.exports = React.createClass({
   displayName: 'Index',
-  render() {
+  render: function () {
     return React.createElement(
       'p',
       null,
@@ -12040,7 +12040,7 @@ module.exports = React.createClass({
         React.createElement(
           'title',
           null,
-          'Universal App'
+          custom.title
         ),
         React.createElement('link', { rel: 'stylesheet', href: '/style.css' })
       ),

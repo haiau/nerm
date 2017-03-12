@@ -28,7 +28,7 @@ const StudentReducer = (state = initialState, action) => {
 /* Selectors */
 
 // Get all students
-export const getStudents = state => state.data; //fix: state.students.data => state.data
+export const getStudents = state => state.students.data;
 
 // Get student by sid
 export const getStudent = (state, sid) => state.students.data.filter(student => student.sid === sid)[0];

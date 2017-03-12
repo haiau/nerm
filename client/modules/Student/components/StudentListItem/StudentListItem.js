@@ -4,16 +4,11 @@ import { FormattedMessage } from 'react-intl';
 
 function StudentListItem(props, context) {
   return (
-    <div className={styles['single-student']}>
-      <h3 className={styles['student-name']}>
-        <Link to={`/students/${props.student.slug}-${props.student.cuid}`} >
-          {props.student.title}
-        </Link>
-      </h3>
-      <p className={styles['student-sid']}>{props.student.sid}</p>
-      <p className={styles['student-email']}>{props.student.email}</p>
-      <p className={styles['student-action']}><a href="#" onClick={props.onDelete}><FormattedMessage id="deleteStudent" /></a></p>
-      <hr className={styles.divider} />
+    <div>
+      <p>{props.student.sid}</p>
+      <p>{props.student.email}</p>
+      <p><a href="#" onClick={props.onDelete}><FormattedMessage id="deleteStudent" /></a></p>
+      <hr/>
     </div>
   );
 }

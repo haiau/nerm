@@ -1,0 +1,9 @@
+<h1>
+  <p><button (click)="addCounter()">Add counter</button></p>
+  <p *ngFor="let counter of counters | async">
+    Counter {{counter.getId()}}: {{counter.getValue()}}
+    <button (click)="removeCounter(counter.getId())">Remove</button>
+    <button (click)="incrementCounter(counter.getId())">+</button>
+    <button (click)="decrementCounter(counter.getId())">-</button>
+  </p>
+</h1>
